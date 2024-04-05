@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&display=swap');
+
+.about-container {
+      display: flex;
+}
+
+.about {
+      max-width: 30vw;
+      text-align: center;
+      align-self: center;
+      margin: 0 50px;
+      font-family: 'Playfair Display', serif;
+}
+
+.msg-img {
+      height: 30vw;
+}
+
+.msg-img:hover {
+      filter: drop-shadow(0 0 0.95rem crimson);
+}
+
+.profileContainer {
+      display: flex;
+      flex-direction: column;
+}
+
+.ourTeam {
+      display: flex;
+}

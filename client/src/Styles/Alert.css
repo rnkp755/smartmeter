@@ -1,0 +1,64 @@
+.alert {
+      text-align: center;
+}
+
+.userData {
+      background-color: #ffdddd;
+      font-weight: bold;
+      font-size: 18px;
+      text-decoration: none;
+      margin: 0px 2px;
+      cursor: pointer;
+      border-radius: 4px;
+}
+
+.userData:hover {
+      background-color: #ff0048e8;
+      cursor: pointer;
+}
+
+.meterData {
+      position: relative;
+      /* Needed for tooltip positioning */
+      cursor: pointer;
+      /* Indicate clickable element */
+}
+
+.tooltip {
+      position: absolute;
+      top: -20px;
+      /* Adjust vertical position based on design */
+      left: 0;
+      padding: 5px;
+      background-color: #ddd;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      display: none;
+      z-index: 90;
+      /* Initially hidden */
+}
+
+.meterData:hover .tooltip {
+      display: block;
+      /* Show tooltip on hover */
+}
+
+.meterData:hover .tooltip:after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-width: 5px;
+      border-style: solid;
+      border-color: transparent transparent transparent #ddd;
+}
+
+.meterData.copied .tooltip {
+      background-color: #0f0;
+      color: #fff;
+}
+
+.meterData.copied .tooltip::before {
+      content: "Copied!";
+}
